@@ -123,3 +123,42 @@ Applied classification modeling
 🚀 Why This Project Matters
 
 This work demonstrates how open satellite data and machine learning can support ecological research, conservation efforts, and climate-driven decision-making.
+
+## 📂 Project Structure
+
+biodiversity_data_Challenge/
+│
+├── Biodiversity_Challenge_Group6.ipynb      # Main analysis notebook
+
+├── TerraClimate.ipynb                       # TerraClimate data processing
+
+├── Training_Data.csv                        # Training dataset (6,314 samples)
+
+├── Validation_Template.csv                  # Validation dataset (2,002 samples)
+
+├── Biodiversity_Challenge_Overview.pdf      # Project overview document
+
+├── Group 6 - Value Case.pdf                 # Value case analysis
+
+├── Group 6 - Project Presentation.pptx      # Final project presentation
+
+└── README.md                                # Project documentation
+
+**Methodology**
+
+Data Processing Pipeline
+Data Loading: Load frog presence data and TerraClimate variables
+Geospatial Extraction: Extract climate values for each frog observation location
+Feature Engineering: Combine frog presence data with climate variables
+Data Preprocessing: Handle missing values and normalize features
+Model Training: Train binary classification model
+Evaluation: Assess model performance using classification metrics
+Validation: Predict on new locations using validation template
+
+**Machine Learning Approach**
+Algorithm: Random Forest Classifier
+Preprocessing:
+Missing value imputation (median)
+Feature scaling (MinMaxScaler)
+Evaluation Metrics: Precision, Recall, F1-Score, Accuracy
+Cross-validation: Train-test split (70-30)
